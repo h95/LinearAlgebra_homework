@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-typedef struct	//¤T¶¥¤è°}µ²ºc 
+typedef struct	//ä¸‰éšæ–¹é™£çµæ§‹ 
 {
 	float element[3][3];
 }matrix;
-const matrix I = {1,0,0,0,1,0,0,0,1};			//¤T¶¥³æ¦ì¯x°} 
+const matrix I = {1,0,0,0,1,0,0,0,1};			//ä¸‰éšå–®ä½çŸ©é™£ 
 
-float three_det(matrix A);						//¤T¶¥¤è°}¦æ¦C¦¡ 
+float three_det(matrix A);				//ä¸‰éšæ–¹é™£è¡Œåˆ—å¼ 
 
-//........................¤T¶¥¤è°}ªº¥[´î­¼.........................//
-matrix matrix_add(matrix A, matrix B);			//¤T¶¥¤è°}¥[ªk
-matrix matrix_sub(matrix A, matrix B);			//¤T¶¥¤è°}´îªk
-matrix coe_multi(matrix A, float c);			//¤T¶¥¤è°}­¼«Y¼Æ 
-matrix matrix_multi(matrix A, matrix B);		//¨â­Ó¤T¶¥¤è°}¬Û­¼
+//........................ä¸‰éšæ–¹é™£çš„åŠ æ¸›ä¹˜.........................//
+matrix matrix_add(matrix A, matrix B);			//ä¸‰éšæ–¹é™£åŠ æ³•
+matrix matrix_sub(matrix A, matrix B);			//ä¸‰éšæ–¹é™£æ¸›æ³•
+matrix coe_multi(matrix A, float c);			//ä¸‰éšæ–¹é™£ä¹˜ä¿‚æ•¸ 
+matrix matrix_multi(matrix A, matrix B);		//å…©å€‹ä¸‰éšæ–¹é™£ç›¸ä¹˜
 //.................................................................//
-void print_matrix(matrix A);					//¦L¥X¤T¶¥¤è°} 
-matrix inv(matrix A);							//¤T¶¥¤è°}¤Ï¯x°}(®Ú¾ÚCayley-Hamilton©w²z)
-void find_LU(matrix A, matrix *L, matrix *U);	//´M§äLU¯x°} 
+void print_matrix(matrix A);				//å°å‡ºä¸‰éšæ–¹é™£ 
+matrix inv(matrix A);					//ä¸‰éšæ–¹é™£åçŸ©é™£(æ ¹æ“šCayley-Hamiltonå®šç†)
+void find_LU(matrix A, matrix *L, matrix *U);		//å°‹æ‰¾LUçŸ©é™£ 
