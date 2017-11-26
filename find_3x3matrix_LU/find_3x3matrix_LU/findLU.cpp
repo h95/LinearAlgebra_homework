@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "matrix.h"
 
-//´M§äLU¯x°} 
+//å°‹æ‰¾LUçŸ©é™£ 
 void find_LU(matrix A, matrix *L, matrix *U)
 {
 	matrix L1, L2, A1;
