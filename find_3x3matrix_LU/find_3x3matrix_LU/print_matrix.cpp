@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "matrix.h"
 
-//¦L¥X¤T¶¥¤è°} 
+//å°å‡ºä¸‰éšæ–¹é™£ 
 void print_matrix(matrix A)
 {
 	for(int i = 0; i < 3; i++)
