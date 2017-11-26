@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "matrix.h"
 
-//¤T¶¥¤è°}¦æ¦C¦¡ 
+//ä¸‰éšæ–¹é™£è¡Œåˆ—å¼  
 float three_det(matrix A)
 {
 	float det = 0;
