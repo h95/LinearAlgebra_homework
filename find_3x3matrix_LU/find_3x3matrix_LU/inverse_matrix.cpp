@@ -1,15 +1,15 @@
 #include "stdafx.h"
 #include "matrix.h"
 
-//¤T¶¥¤è°}¤Ï¯x°}(®Ú¾ÚCayley-Hamilton©w²z)
+//ä¸‰éšæ–¹é™£åçŸ©é™£(æ ¹æ“šCayley-Hamiltonå®šç†)
 matrix inv(matrix A)
 {
 	matrix A_2 = matrix_multi(A,A), inverse;
 	float traceA = 0, traceA_2 = 0, c;
-																////////////////////Cayley-Hamilton©w²z//////////////////////////////////////
-	for(int i = 0; i < 3; i++)									//    -1     1                              trace(A)^2 - trace(A^2)        //
-	{															//   A   = ------ * ( A^2 - trace(A) * A + ------------------------ * I)   //
-		traceA += A.element[i][i];								//         det(A)                                      2                   //
+												////////////////////Cayley-Hamiltonå®šç†//////////////////////////////////////
+	for(int i = 0; i < 3; i++)								//    -1     1                              trace(A)^2 - trace(A^2)        //
+	{											//   A   = ------ * ( A^2 - trace(A) * A + ------------------------ * I)   //
+		traceA += A.element[i][i];							//         det(A)                                      2                   //
 		traceA_2 += A_2.element[i][i];							/////////////////////////////////////////////////////////////////////////////
 	}
 	
